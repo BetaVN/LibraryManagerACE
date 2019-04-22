@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment_ACE.DataClass
 {
-    class AudioObject
+    internal class AudioObject
     {
         private string AudioName { get; set; }
         private string AudioType { get; set; }

@@ -1,14 +1,5 @@
 ﻿using Assignment_ACE.DataClass;
-using Assignment_ACE.Manager;
-using Assignment_ACE.Observers;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Assignment_ACE.Interface
@@ -28,10 +19,12 @@ namespace Assignment_ACE.Interface
                     textBox6.Enabled = false;
                     label8.Text = "Book";
                     break;
+
                 case "Assignment_ACE.Observers.EBookObserver":
                     textBox5.Enabled = false;
                     label8.Text = "E-Book";
                     break;
+
                 case "Assignment_ACE.Observers.VideoObserver":
                     if (editItem.isFile)
                     {
@@ -43,6 +36,7 @@ namespace Assignment_ACE.Interface
                         label8.Text = "Video (Physical)";
                     }
                     break;
+
                 case "Assignment_ACE.Observers.AudioObserver":
                     if (editItem.isFile)
                     {
@@ -59,7 +53,7 @@ namespace Assignment_ACE.Interface
             ItemData();
             return;
         }
-        
+
         private void ItemData()
         {
             textBox1.Text = editItem.name;
@@ -77,7 +71,6 @@ namespace Assignment_ACE.Interface
             }
         }
 
-
         private void label1_Click(object sender, EventArgs e)
         {
             return;
@@ -87,7 +80,6 @@ namespace Assignment_ACE.Interface
         {
             return;
         }
-
 
         private void button1_Click(object sender, EventArgs e)
         {

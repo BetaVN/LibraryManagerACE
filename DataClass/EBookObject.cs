@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment_ACE.DataClass
 {
-    class EBookObject
+    internal class EBookObject
     {
         private string EBookName { get; set; }
         private string Author { get; set; }

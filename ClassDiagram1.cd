@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Assignment_ACE.DataClass.AudioObject" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIEAAAERAgAAAAAAqAAQQAAAAAAYAAAEgEAAAwKAAAA=</HashCode>
+      <FileName>DataClass\AudioObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.DataClass.BookObject" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAECAAQAAAIAiAgAAAAAQAAMAAAAIAAEAAAAAAQ=</HashCode>
+      <FileName>DataClass\BookObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.DataClass.EBookObject" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAgAAABgIAAAiABAAAAAAAAAAgAgDAAAAAAAAAA=</HashCode>
+      <FileName>DataClass\EBookObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.DataClass.VideoObject" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AkAgAAEAAgAIAAAAiEAAogAgAAAABAAAgAwAAAAABAI=</HashCode>
+      <FileName>DataClass\VideoObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Interface.AddItem">
+    <Position X="6.75" Y="5.25" Width="1.5" />
+    <Members>
+      <Property Name="returnItem" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ACAAAAQBASAAABCQACCAAABCAAAYAAAAEEAAAAAAAAA=</HashCode>
+      <FileName>Interface\AddItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Interface.ItemDetails">
+    <Position X="8.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAAAQBASAAABCAACCAAABCAAAIAAAAEEAAAgAAAAA=</HashCode>
+      <FileName>Interface\EditItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Interface.ShowDetail">
+    <Position X="12.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAABASAAABCAAACAAABCAAAIAAAAEEIAAgAAAAA=</HashCode>
+      <FileName>Interface\ShowDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Interface.Summary">
+    <Position X="10.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAACAAABAABACAAgACAAgBAIAAAAAAAAAAgAA=</HashCode>
+      <FileName>Interface\Summary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.MainInterface">
+    <Position X="4.75" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AACAAABgACAAAASAAACAAAACAFg4EQAAAHAIABAAgGA=</HashCode>
+      <FileName>Interface\MainInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Program" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Manager.LibraryManager">
+    <Position X="0.5" Y="2.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAEAAAAAGAAEQAAAAEA=</HashCode>
+      <FileName>Manager\LibraryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Observers.AudioObserver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAANAAAAAAAAAAiAAAABQAgAAAABAAAABAAAAAAEMAA=</HashCode>
+      <FileName>Observers\AudioObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment_ACE.Observers.BookObserver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAANAAAAAAAAAAiAgAABQAgAAAABAAAABAAAAAAEMAA=</HashCode>
+      <FileName>Observers\BookObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment_ACE.Observers.EBookObserver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAANAAAAAAAAAAiAAAABQAgAAAABAAAAhAAAAAAEMAA=</HashCode>
+      <FileName>Observers\EBookObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment_ACE.Observers.VideoObserver" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAANAAAAAAAAAAiIAAABQAgAAAABAAAABAAAAAAEMAA=</HashCode>
+      <FileName>Observers\VideoObserver.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Assignment_ACE.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assignment_ACE.Visitor.SummaryVisitor">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAgAAAAgAEAAAAAAgAAAQAABAAIAAgAAA=</HashCode>
+      <FileName>Visitor\SummaryVisitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Assignment_ACE.DataClass.MaterialInfo">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAICAAAAIAAAAAAAAAIgAAAAFAAAAgAAAAAAEAAA=</HashCode>
+      <FileName>DataClass\MaterialInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Assignment_ACE.Observers.BaseObserver">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgoAAAAACAAAAAAAIAAABAQAAIAAACAAGAAIAAAA=</HashCode>
+      <FileName>Observers\BaseObserver.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

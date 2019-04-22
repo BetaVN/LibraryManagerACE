@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Assignment_ACE.DataClass;
+﻿using Assignment_ACE.DataClass;
+using System;
 
 namespace Assignment_ACE.Observers
 {
-    class VideoObserver : BaseObserver
+    internal class VideoObserver : BaseObserver
     {
         private VideoObject videoContext { get; set; }
 
@@ -87,6 +83,7 @@ namespace Assignment_ACE.Observers
             videoContext.changeRemainingVideo(count);
             return;
         }
+
         void BaseObserver.changeType(string type)
         {
             videoContext.changeVideoType(type);

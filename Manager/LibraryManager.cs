@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.IO;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Assignment_ACE.DataClass;
 using Assignment_ACE.Observers;
-using Assignment_ACE.DataClass;
+using System;
+using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Assignment_ACE.Manager
 {
-    class LibraryManager
+    internal class LibraryManager
     {
         private List<BaseObserver> materialList = new List<BaseObserver>();
 
@@ -30,7 +28,7 @@ namespace Assignment_ACE.Manager
             foreach (BaseObserver material in materialList)
             {
                 if (material.getName() == name && material.getType() == type)
-                {    
+                {
                     materialList.Remove(material);
                     return;
                 }
@@ -79,14 +77,13 @@ namespace Assignment_ACE.Manager
             string path = @"Database\MaterialItems.txt";
             string[] materialData;
             materialData = File.ReadAllLines(path);
-
             foreach (string data in materialData)
             {
                 string[] datas = data.Split('|');
                 string name = datas[1];
                 string author = datas[2];
                 string publisher = datas[3];
-                DateTime publishDate = DateTime.ParseExact(datas[4], "dd/MM/yyyy", CultureInfo.InvariantCulture);
+                DateTime publishDate = Convert.ToDateTime(datas[4]);
                 int stock = 0;
                 bool isFile = false;
                 if (datas[5] == "F")
@@ -106,21 +103,25 @@ namespace Assignment_ACE.Manager
                         BookObserver newBookObserver = new BookObserver(newBook);
                         this.materialList.Add(newBookObserver);
                         break;
+
                     case "EBook":
                         EBookObject newEBook = new EBookObject(name, author, publisher, publishDate);
                         EBookObserver newEBookObserver = new EBookObserver(newEBook);
                         this.materialList.Add(newEBookObserver);
                         break;
+
                     case "Video":
                         VideoObject newVideo = new VideoObject(name, type, author, publishDate, publisher, isFile, stock);
                         VideoObserver newVideoObserver = new VideoObserver(newVideo);
                         this.materialList.Add(newVideoObserver);
                         break;
+
                     case "Audio":
                         AudioObject newAudio = new AudioObject(name, type, author, publishDate, publisher, isFile, stock);
                         AudioObserver newAudioObserver = new AudioObserver(newAudio);
                         this.materialList.Add(newAudioObserver);
                         break;
+
                     default:
                         break;
                 }
@@ -141,12 +142,15 @@ namespace Assignment_ACE.Manager
                     case "Assignment_ACE.Observers.BookObserver":
                         classname = "Book";
                         break;
+
                     case "Assignment_ACE.Observers.EBookObserver":
                         classname = "EBook";
                         break;
+
                     case "Assignment_ACE.Observers.VideoObserver":
                         classname = "Video";
                         break;
+
                     case "Assignment_ACE.Observers.AudioObserver":
                         classname = "Audio";
                         break;
@@ -154,7 +158,7 @@ namespace Assignment_ACE.Manager
                 string name = material.getName();
                 string author = material.getAuthor();
                 string publisher = material.getSource();
-                string publishDate = material.getReleaseDate().ToString("dd/mm/yyyy");
+                string publishDate = material.getReleaseDate().ToShortDateString();
                 string stock;
                 if (material.isDigital())
                 {
@@ -165,12 +169,10 @@ namespace Assignment_ACE.Manager
                     stock = material.getStock().ToString();
                 }
                 string type = material.getType();
-                materialData.Append(classname + "|" + name + "|" + author + "|" + publisher + "|" + publishDate + "|" + stock + "|" + type);
+                materialData.Add(classname + "|" + name + "|" + author + "|" + publisher + "|" + publishDate + "|" + stock + "|" + type);
             }
-
             File.WriteAllLines(path, materialData.ToArray());
             return;
         }
-
     }
 }

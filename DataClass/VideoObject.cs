@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assignment_ACE.DataClass
 {
-    class VideoObject
+    internal class VideoObject
     {
         private string VideoName { get; set; }
         private string VideoType { get; set; }

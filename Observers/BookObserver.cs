@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Assignment_ACE.DataClass;
+﻿using Assignment_ACE.DataClass;
+using System;
 
 namespace Assignment_ACE.Observers
 {
-    class BookObserver : BaseObserver
+    internal class BookObserver : BaseObserver
     {
         private BookObject bookContext { get; set; }
 
@@ -85,6 +81,7 @@ namespace Assignment_ACE.Observers
             bookContext.changeRemainingBook(count);
             return;
         }
+
         void BaseObserver.changeType(string type)
         {
             return;

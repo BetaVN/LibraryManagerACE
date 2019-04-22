@@ -1,2 +1,2 @@
-﻿Book|ABCD|ABC|Unknown Department|25/01/1992|10|None
-EBook|CDE|C|D|26/02/1980|0|Type1
+﻿Book|ABCD|ABC|Unknown Department|1/25/1992|10|None
+EBook|CDE|C|D|2/26/1980|0|Type1

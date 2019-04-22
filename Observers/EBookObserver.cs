@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Assignment_ACE.DataClass;
+﻿using Assignment_ACE.DataClass;
+using System;
 
 namespace Assignment_ACE.Observers
 {
-    class EBookObserver : BaseObserver
+    internal class EBookObserver : BaseObserver
     {
         private EBookObject ebookContext { get; set; }
 
@@ -83,10 +79,10 @@ namespace Assignment_ACE.Observers
         {
             return;
         }
+
         void BaseObserver.changeType(string type)
         {
             return;
         }
-
     }
 }

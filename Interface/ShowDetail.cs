@@ -1,12 +1,5 @@
 ﻿using Assignment_ACE.DataClass;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Assignment_ACE.Interface
@@ -42,9 +35,11 @@ namespace Assignment_ACE.Interface
                 case "Assignment_ACE.Observers.BookObserver":
                     label8.Text = "Book";
                     break;
+
                 case "Assignment_ACE.Observers.EBookObserver":
                     label8.Text = "E-Book";
                     break;
+
                 case "Assignment_ACE.Observers.VideoObserver":
                     if (selected.isFile)
                     {
@@ -55,6 +50,7 @@ namespace Assignment_ACE.Interface
                         label8.Text = "Video (Physical)";
                     }
                     break;
+
                 case "Assignment_ACE.Observers.AudioObserver":
                     if (selected.isFile)
                     {

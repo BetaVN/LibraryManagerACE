@@ -39,7 +39,7 @@ namespace Assignment_ACE.Interface
         public void StockCondition(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 1 || comboBox1.SelectedIndex == 4 || comboBox1.SelectedIndex == 5)
-            {
+            {          
                 textBox5.Enabled = false;
                 textBox6.Enabled = true;
             }
@@ -49,6 +49,10 @@ namespace Assignment_ACE.Interface
                 if (comboBox1.SelectedIndex == 0)
                 {
                     textBox6.Enabled = false;
+                }
+                else
+                {
+                    textBox6.Enabled = true;
                 }
             }
             return;

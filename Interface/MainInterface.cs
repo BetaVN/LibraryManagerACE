@@ -132,7 +132,7 @@ namespace Assignment_ACE
                     foreach (MaterialInfo material in currentMaterialList)
                     {
                         string name = material.name;
-                        if (material.type.ToLower() != "none")
+                        if (material.type.ToLower() != "none" && material.type != "")
                         {
                             name += " (" + material.type + ")";
                         }
@@ -195,7 +195,7 @@ namespace Assignment_ACE
                     foreach (MaterialInfo material in currentMaterialList)
                     {
                         string name = material.name;
-                        if (material.type.ToLower() != "none")
+                        if (material.type.ToLower() != "none" && material.type != "")
                         {
                             name += " (" + material.type + ")";
                         }

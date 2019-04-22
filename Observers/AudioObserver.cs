@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Assignment_ACE.DataClass;
+﻿using Assignment_ACE.DataClass;
+using System;
 
 namespace Assignment_ACE.Observers
 {
-    class AudioObserver : BaseObserver
+    internal class AudioObserver : BaseObserver
     {
         private AudioObject audioContext { get; set; }
 
@@ -87,11 +83,11 @@ namespace Assignment_ACE.Observers
             audioContext.changeRemainingAudio(count);
             return;
         }
+
         void BaseObserver.changeType(string type)
         {
             audioContext.changeAudioType(type);
             return;
         }
-
     }
 }
